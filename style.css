@@ -1,0 +1,124 @@
+body {
+  font-family: "Permanent Marker", cursive;
+}
+#gameContainer {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#gameBoard {
+  border: 3px solid;
+  width: 40%;
+}
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.labels {
+  font-size: 2.5rem;
+}
+#resetBtn {
+  font-size: 22px;
+  width: 100px;
+  height: 40px;
+  border: 4px solid;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* modal */
+
+/* CSS for modal */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CSS for input and submit button */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#submitName {
+  width: 100%;
+  background-color: lightskyblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submitName:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 800px) {
+  #gameContainer {
+    flex-direction: column; /* Display elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+
+  #gameBoard,
+  #leaderboard,
+  #resetBtn {
+    width: auto; /* Allow elements to take full width */
+    margin-bottom: 20px; /* Add some space between elements */
+  }
+}
+@media screen and (max-width: 550px) {
+  #gameBoard,
+  #leaderboard {
+    width: 100%;
+  }
+}
