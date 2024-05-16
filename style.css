@@ -43,9 +43,8 @@ tr:nth-child(even) {
 
 /* modal */
 
-/* CSS for modal */
 .modal {
-  display: none; /* Hide modal by default */
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -56,7 +55,6 @@ tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal content */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
@@ -65,7 +63,6 @@ tr:nth-child(even) {
   width: 50%;
 }
 
-/* Close button */
 .close {
   color: #aaa;
   float: right;
@@ -80,7 +77,6 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-/* CSS for input and submit button */
 input[type="text"] {
   width: 100%;
   padding: 12px 20px;
@@ -105,15 +101,15 @@ input[type="text"] {
 
 @media screen and (max-width: 800px) {
   #gameContainer {
-    flex-direction: column; /* Display elements vertically */
-    align-items: center; /* Center elements horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   #gameBoard,
   #leaderboard,
   #resetBtn {
-    width: auto; /* Allow elements to take full width */
-    margin-bottom: 20px; /* Add some space between elements */
+    width: auto;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 550px) {
